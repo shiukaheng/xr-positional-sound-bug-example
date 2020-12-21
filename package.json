@@ -1,0 +1,17 @@
+{
+  "name": "xr-directional-sound-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -t browserify-css ./source/index.js --standalone Vapor -o ./build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "browserify-css": "^0.15.0",
+    "three": "^0.123.0"
+  }
+}
