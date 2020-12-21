@@ -51,7 +51,7 @@ audioLoader.load("./levanpolkka.mp3", (audioBuffer)=>{
     audioSource.setBuffer(audioBuffer)
     audioSource.setLoop(true)
     sphereMesh.add(audioSource)
-    loadingScreen.innerText = "Click when ready."
+    loadingScreen.innerText = "Click anywhere when ready."
     window.addEventListener("click", ()=>{
         audioSource.play()
         loadingScreen.style.display = "none"
