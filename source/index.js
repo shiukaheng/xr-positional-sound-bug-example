@@ -9,6 +9,15 @@ document.body.appendChild(loadingScreen)
 
 // Set up scene prerequisites
 
+navigator.mediaDevices.getUserMedia({
+    audio: {
+      latency: 0.05,
+      echoCancellation: false,
+      mozNoiseSuppression: true,
+      mozAutoGainControl: false
+    }
+  });
+
 var scene = new THREE.Scene()
 var camera = new THREE.PerspectiveCamera()
 scene.add(camera)
